@@ -607,7 +607,6 @@ function clarinet(eventBus) {
     var maxActual = 0;
      
     if (textNode.length > MAX_BUFFER_LENGTH) {
-      emitError("Max buffer length exceeded: textNode");
       maxActual = Math.max(maxActual, textNode.length);
     }
     if (numberNode.length > MAX_BUFFER_LENGTH) {
